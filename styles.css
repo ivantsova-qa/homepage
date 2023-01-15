@@ -13,14 +13,14 @@ body {
     --secondary-text-color: #5c5c62;
     --durability-text-color: #6a737d9c;
     --icon-color: #6a737d;
-    --border-color: #ff9a0045;
-    --text-decoration-color: #ff9a00;
+    --border-color: #ffe37d;
+    --text-decoration-color: #ffcb7d;
 }
 
 .container {
-    margin: 0 auto;
+    margin: 10px auto;
     padding: 0 30px;
-    max-width: 900px;
+    max-width: 800px;
 }
 
 .fh {
@@ -71,67 +71,68 @@ body {
 
 /*Contact info styles*/
 .contact-info__header,
-  .contact-info__sub-header {
-      text-align: center;
-  }
+.contact-info__sub-header {
+    text-align: center;
+    font-size: 35px;
+}
 
-  .contact-info__header {
-      color: var(--primary-text-color);
-      margin-bottom: 15px;
-      text-decoration-color: var(--text-decoration-color);
-      text-decoration-line: underline;
-  }
+.contact-info__header {
+    color: var(--primary-text-color);
+    margin-bottom: 15px;
+    text-decoration-color: var(--text-decoration-color);
+    text-decoration-line: underline;
+}
 
-  .contact-info__sub-header {
-      color: var(--secondary-text-color);
-      margin-bottom: 30px;
-  }
+.contact-info__sub-header {
+    color: var(--secondary-text-color);
+    margin-bottom: 30px;
+}
 
-  .contact-info__block {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-  }
+.contact-info__block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 
-  .contact-info__block--center {
-      justify-content: center;
-  }
+.contact-info__block--center {
+    justify-content: center;
+}
 
-  .contact-info__item {
-      color: var(--secondary-text-color);
-      text-decoration: none;
-      display: flex;
-      justify-content: start;
-  }
+.contact-info__item {
+    color: var(--secondary-text-color);
+    text-decoration: none;
+    display: flex;
+    justify-content: start;
+}
 
-  .contact-info__item:not(:last-child) {
-      margin-bottom: 20px;
-  }
+.contact-info__item:not(:last-child) {
+    margin-bottom: 20px;
+}
 
-  .contact-info__item-icon-wrapper {
-      margin-right: 10px;
-      width: 20px;
-      display: flex;
-      justify-content: center;
-  }
+.contact-info__item-icon-wrapper {
+    margin-right: 10px;
+    width: 20px;
+    display: flex;
+    justify-content: center;
+}
 
-  .contact-info__item-icon path {
-      fill: var(--icon-color);
-  }
+.contact-info__item-icon path {
+    fill: var(--icon-color);
+}
 
-  .contact-info__item-icon {
-      height: 1.1428rem;
-      vertical-align: text-bottom;
-  }
+.contact-info__item-icon {
+    height: 1.1428rem;
+    vertical-align: text-bottom;
+}
 
-  .contact-info__avatar {
-      border-radius: 50%;
-      width: 100px;
-      height: 100px;
-      object-fit: cover;
-      border: 3px solid;
-      border-color: var(--text-decoration-color);
-  }
+.contact-info__avatar {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border: 3px solid;
+    border-color: var(--text-decoration-color);
+}
 
 /*Intro and skills styles*/
 .intro {
@@ -181,6 +182,7 @@ body {
     color: var(--secondary-text-color);
     text-align: left;
     margin-bottom: 20px;
+    text-decoration: underline;
 }
 
 .experiences__company-header-durability {
@@ -193,7 +195,7 @@ body {
 .experiences__company-header-name {
     color: var(--primary-text-color);
     text-decoration-color: var(--text-decoration-color);
-    text-decoration-line: underline;
+    /*    text-decoration-line: underline;*/
     text-align: left;
     margin-bottom: 20px;
 }
@@ -233,6 +235,7 @@ body {
     color: var(--secondary-text-color);
     text-align: left;
     margin-bottom: 20px;
+    text-decoration: underline;
 }
 
 .additional-info__education-university-durability {
@@ -258,10 +261,14 @@ body {
 
 .additional-info__languages-header {
     color: var(--secondary-text-color);
-    text-align: left;
+    text-align: center;
     margin-bottom: 20px;
 }
 
 .additional-info__languages-item {
-    color: var(--secondary-text-color);
+    color: black;
+}
+
+.checked {
+    color: orange;
 }
